@@ -23,7 +23,8 @@ This project implements and tests three explicit exception-handling policies for
 - missing data can lead to misleading conclusions if the caller assumes the output is complete
 
 ## 3) Fail-Soft (Fallback Policy)
-**Definition:** Failures are replaced with a predefined fallback value. The overall computation always completes normally.
+**Definition:** Failures are replaced with a predefined fallback value. The overall computation always completes normally.In production systems, fail-soft policies should always be combined with logging and monitoring to ensure hidden failures are still detectable.
+
 
 **When it is appropriate:**
 - high-availability systems where degraded output is acceptable
