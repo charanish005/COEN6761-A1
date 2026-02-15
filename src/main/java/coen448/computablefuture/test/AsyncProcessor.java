@@ -17,7 +17,7 @@ public class AsyncProcessor {
         return CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]))
                 .thenApply(v -> futures.stream()
                         .map(CompletableFuture::join)
-                        .collect(Collectors.joining(" ")));
+                        .collect(Collectors.joining("|")));
     }
 
     public CompletableFuture<List<String>> processAsyncCompletionOrder(
