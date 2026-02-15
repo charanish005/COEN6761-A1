@@ -31,4 +31,6 @@ This project implements and tests three explicit exception-handling policies for
 
 **Risk / trade-off (important):**
 - can mask serious failures and outages if fallback values look normal
-- should be paired with monitoring/logging in real systems to detect hidden failures
+- should be paired with monitoring/logging in real systems to detect hidden failures.
+This project demonstrates how explicit failure semantics improve reliability in concurrent systems.
+
